@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-rex</title>
+</head>
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+		width: 700px;
+		height: 450px;
+	}
+	.dino{
+		position: absolute;
+		width : 80px;
+		height: 80px;
+		background-image: url('./sprites/dino.png');
+		background-size: 100% 100%;
+		bottom : 0px;
+	}
+	.game{
+		position: relative;
+		height: 400px;
+		width: 100%;
+
+	}
+	.background{
+		background-image: url('./sprites/backgroundday.png');
+		background-size : 100% 100%;
+		height: 100%;
+		width: 100%;
+	}
+	.score{
+		position: absolute;
+		left: 5px;
+		font-size: 15px;
+	}
+	.record{
+		position: absolute;
+		right: 5px;
+		font-size: 15px;
+	}
+	.obstacle{
+		position: absolute;
+	}
+	.cactus{
+		width: 80px;
+		height: 80px;
+		background-image: url('./sprites/cactus.png');
+		background-size: 100% 100%;
+		bottom: 10px;
+	}
+	.bird{
+		width: 50px;
+		height: 50px;
+		background-image: url('./sprites/bird.png') !important;
+		background-size: 100% 100%;
+		bottom: 55px !important;
+	}
+</style>
+<body>
+ <div class='background' id='background'>
+ 	<h2 id='notif'></h2>
+ 	<h3 class='score' id='score'></h3>
+ 	<h3 class='record' id='record'>Record : 1212</h3>
+ 	<div class='game' id='game'>
+ 		<div class='dino' id='dino'></div>
+ 	</div>
+ </div>
+</body>
+<script type="text/javascript" src="dinoGame.js" ></script>
+</html>
